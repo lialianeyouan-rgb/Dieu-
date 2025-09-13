@@ -1,0 +1,40 @@
+{
+  "name": "polygon-triangular-arb-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Triangular arbitrage bot on Polygon with Aave v3 flash loans and multi-DEX swaps (QuickSwap, Kyber, Balancer)",
+  "scripts": {
+    "build": "tsc -p .",
+    "clean": "rimraf dist",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.ts --network polygon",
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network polygonMumbai",
+    "fork": "hardhat node --network hardhat",
+    "bot": "tsx bot/src/index.ts",
+    "start": "npm run bot"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "axios": "^1.7.4",
+    "cli-table3": "^0.6.5",
+    "decimal.js": "^10.4.3",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2",
+    "pino": "^9.3.2"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/cli-table3": "^0.6.5",
+    "@types/node": "^22.7.4",
+    "hardhat": "^2.22.12",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.7.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.2"
+  }
+}
+
