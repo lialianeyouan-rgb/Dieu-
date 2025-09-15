@@ -1,0 +1,32 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "bot": "node dist/src/bot/index.js",
+    "bot:simulate": "NODE_ENV=simulation node dist/src/bot/index.js",
+    "test": "echo \"No tests yet\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lialianeyouan-rgb/Dieu-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lialianeyouan-rgb/Dieu-/issues"
+  },
+  "homepage": "https://github.com/lialianeyouan-rgb/Dieu-#readme",
+  "devDependencies": {
+    "@types/node": "^24.4.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "cli-table3": "^0.6.5",
+    "dotenv": "^17.2.2"
+  }
+}
